@@ -76,3 +76,7 @@ Below are the list of other framework library that you can install and use right
 Copyright (C) 2005-2025 by IP2Location.com
 
 License under MIT
+
+// 初始化数据库连接（FILE_IO 模式，适合小数据库；MEMORY_CACHE 模式更高效，需更多内存）
+$db = new Database();
+$record = $db->lookup($ip, Database::ALL); // 解析所有信息

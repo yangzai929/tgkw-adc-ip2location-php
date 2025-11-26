@@ -747,6 +747,9 @@ class Database
 	 */
 	public function __construct($file = null, $mode = self::FILE_IO, $defaultFields = self::ALL)
 	{
+        if (is_null($file)) {
+            $file = '..'. DIRECTORY_SEPARATOR.__DIR__ . DIRECTORY_SEPARATOR . 'data' . DIRECTORY_SEPARATOR . 'IP2LOCATION-LITE-DB11.BIN';
+        }
 		// Locate the actual file
 		$realPath = $this->findFile($file);
 
