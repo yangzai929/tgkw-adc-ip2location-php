@@ -23,7 +23,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"TgkwAdc\\IP2Location": "src"
+			"TgkwAdc\\IP2Location\\": "src"
 		}
 	}
 }
